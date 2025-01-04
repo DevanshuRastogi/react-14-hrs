@@ -1,0 +1,9 @@
+.butnStyle{
+    background:linear-gradient(#fff),#5841c1;
+    font-weight: bolder;
+    color: white;
+}
+
+.prodTitle{
+    font-style: italic;
+}
