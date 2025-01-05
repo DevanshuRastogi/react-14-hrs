@@ -14,9 +14,9 @@ function App() {
   ];
   return (
     <div>
-      {/* <ClassBasedComponent />
-      <FunctionalComponent/> */}
-      <ProductList listOfProd= {productDataDummy} name= "Devanshu" country = "India ❤️"/>
+      <ClassBasedComponent />
+      {/* <FunctionalComponent/> */}
+      {/* <ProductList listOfProd= {productDataDummy} name= "Devanshu" country = "India ❤️"/> */}
     </div>
   )
 }
