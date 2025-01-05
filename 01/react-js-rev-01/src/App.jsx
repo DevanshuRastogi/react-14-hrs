@@ -3,6 +3,7 @@ import './App.css'
 import ClassBasedComponent from './components/ClassBasedComponent'
 import FunctionalComponent from './components/FunctionalComponent'
 import ProductList from './components/product'
+import NewComponentForPractice from './components/NewComponentForPractice'
 
 function App() {
  
@@ -14,9 +15,10 @@ function App() {
   ];
   return (
     <div>
-      <ClassBasedComponent />
-      {/* <FunctionalComponent/> */}
+      {/* <ClassBasedComponent /> */}
+      {/* <FunctionalComponent/>  */}
       {/* <ProductList listOfProd= {productDataDummy} name= "Devanshu" country = "India ❤️"/> */}
+      <NewComponentForPractice />
     </div>
   )
 }
