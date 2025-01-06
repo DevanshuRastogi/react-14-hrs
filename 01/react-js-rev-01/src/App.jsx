@@ -4,6 +4,7 @@ import ClassBasedComponent from './components/ClassBasedComponent'
 import FunctionalComponent from './components/FunctionalComponent'
 import ProductList from './components/product'
 import NewComponentForPractice from './components/NewComponentForPractice'
+import Users from './components/users'
 
 function App() {
  
@@ -15,10 +16,11 @@ function App() {
   ];
   return (
     <div>
+      <Users/>
       {/* <ClassBasedComponent /> */}
       {/* <FunctionalComponent/>  */}
       {/* <ProductList listOfProd= {productDataDummy} name= "Devanshu" country = "India ❤️"/> */}
-      <NewComponentForPractice />
+      {/* <NewComponentForPractice /> */}
     </div>
   )
 }
