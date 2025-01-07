@@ -5,41 +5,60 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
-export default function TodoItems({ todo ,fetchTodoDetails }) {
-  console.log(todo);
 
+export default function TodoItems({ todo, fetchTodoDetails }) {
   return (
     <Card
       sx={{
-        maxWidth: 350,
+        maxWidth: 400,
+        borderRadius: 2,
+        boxShadow: "0 8px 16px rgba(0, 0, 0, 0.1)",
+        overflow: "hidden",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
+        backgroundColor: "#f9f9f9",
+        transition: "transform 0.3s, box-shadow 0.3s",
+        "&:hover": {
+          transform: "scale(1.05)",
+          boxShadow: "0 12px 24px rgba(0, 0, 0, 0.2)",
+        },
       }}
     >
       <CardContent
         sx={{
+          padding: 3,
           display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
         }}
       >
-        <Typography variant="h5" color={"black"}>
-          {todo?.todo}
+        <Typography variant="h6" color="text.primary">
+          {todo?.todo || "Untitled Todo"}
         </Typography>
       </CardContent>
-      <CardActions> 
-        <Button onClick={()=>fetchTodoDetails(todo?.id)}
+      <CardActions
+        sx={{
+          justifyContent: "center",
+          padding: 2,
+          borderTop: "1px solid #e0e0e0",
+        }}
+      >
+        <Button
+          onClick={() => fetchTodoDetails(todo?.id)}
+          variant="contained"
           sx={{
-            background: "black",
+            background: "#1976d2",
             color: "white",
-            opacity: ".75",
+            textTransform: "capitalize",
+            fontSize: "0.9rem",
+            fontWeight: 500,
             "&:hover": {
-              background: "white",
-              color: "black",
-              opacity: "1",
+              background: "#145ea8",
             },
           }}
         >
-          show details
+          Show Details
         </Button>
       </CardActions>
     </Card>
