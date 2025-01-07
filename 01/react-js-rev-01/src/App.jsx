@@ -7,6 +7,7 @@ import NewComponentForPractice from "./components/NewComponentForPractice";
 import Users from "./components/users";
 import Btns from "./components/context-components/btns";
 import TextContent from "./components/context-components/TextContent";
+import ExampleUseReducers from "./components/ExampleUseReducers";
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
       {/* <FunctionalComponent/>  */}
       {/* <ProductList listOfProd= {productDataDummy} name= "Devanshu" country = "India ❤️"/> */}
       {/* <NewComponentForPractice /> */}
-      <TextContent />
-      <Btns />
+      {/* <TextContent />
+      <Btns /> */}
+
+      <ExampleUseReducers />
     </div>
   );
 }
